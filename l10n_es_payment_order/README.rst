@@ -67,11 +67,12 @@ Contribuidores
 
 * Ignacio Ibeas <ignacio@acysos.com>
 * Jordi Esteve <jesteve@zikzakmedia.com
-* Pablo Rocandio 
+* Pablo Rocandio
 * Nan·tic
 * Ainara Galdona <comercial@avanzosc.es>
 * Pedro M. Baeza <pedro.baeza@serviciosbaeza.com>
 * Alexis de Lattre <alexis.delattre@akretion.com>
+* Gonzalo Borrás <gborras@bisnesmart.com>
 
 Maintainer
 ----------
