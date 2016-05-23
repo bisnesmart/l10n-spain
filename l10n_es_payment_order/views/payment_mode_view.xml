@@ -21,6 +21,7 @@
                             <field name="csb58_include_address"/>
                             <field name="csb58_alt_address_format"/>
                             <field name="csb58_ine"/>
+                            <field name="csb_suffix"/>
                         </group>
                         <group col="4"
                                string="CSB 32 Options"
@@ -35,6 +36,7 @@
                                 >
                             <field name="is_csb19" invisible="1"/>
                             <field name="csb19_extra_concepts"/>
+                            <field name="csb_suffix"/>
                         </group>
                         <group string="CSB 34 Options"
                                attrs="{'invisible': [('is_csb34', '=', False), ('is_csb3401', '=', False)]}"
