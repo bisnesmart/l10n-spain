@@ -21,7 +21,6 @@
                             <field name="csb58_include_address"/>
                             <field name="csb58_alt_address_format"/>
                             <field name="csb58_ine"/>
-                            <field name="csb_suffix"/>
                         </group>
                         <group col="4"
                                string="CSB 32 Options"
@@ -36,7 +35,6 @@
                                 >
                             <field name="is_csb19" invisible="1"/>
                             <field name="csb19_extra_concepts"/>
-                            <field name="csb_suffix"/>
                         </group>
                         <group string="CSB 34 Options"
                                attrs="{'invisible': [('is_csb34', '=', False), ('is_csb3401', '=', False)]}"
@@ -66,6 +64,17 @@
                         </group>
                     </group>
                 </field>
+            </field>
+        </record>
+
+        <record id="view_payment_mode_form_inherit_csb_suffix" model="ir.ui.view">
+            <field name="name">payment.mode.form.inherit.csb.suffix</field>
+            <field name="model">payment.mode</field>
+            <field name="inherit_id" ref="account_payment.view_payment_mode_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='bank_id']" position="after">
+                  <field  attrs="{'invisible': ['|',('is_csb58', '=', False),('is_csb19', '=', False)]}" name="csb_suffix"/>
+                </xpath>
             </field>
         </record>
 
