@@ -67,5 +67,16 @@
             </field>
         </record>
 
+        <record id="view_payment_mode_form_inherit_csb_suffix" model="ir.ui.view">
+            <field name="name">payment.mode.form.inherit.csb.suffix</field>
+            <field name="model">payment.mode</field>
+            <field name="inherit_id" ref="account_payment.view_payment_mode_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='bank_id']" position="after">
+                  <field  attrs="{'invisible': [('is_csb58', '=', False),('is_csb19', '=', False)]}" name="csb_suffix"/>
+                </xpath>
+            </field>
+        </record>
+
     </data>
 </openerp>
