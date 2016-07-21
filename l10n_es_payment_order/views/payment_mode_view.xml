@@ -73,7 +73,7 @@
             <field name="inherit_id" ref="account_payment.view_payment_mode_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='bank_id']" position="after">
-                  <field  attrs="{'invisible': [('is_csb32', '=', True)]}" name="csb_suffix"/>
+                  <field  name="csb_suffix"/>
                 </xpath>
             </field>
         </record>
